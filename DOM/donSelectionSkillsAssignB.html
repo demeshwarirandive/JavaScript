@@ -1,0 +1,36 @@
+<!-- DOM Assignment No 1 (12/06/23)
+Selecting Element in the DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise Time</title>
+    
+</head>
+<body>
+    <main>
+        <div id="overview">
+            <h1>HTML & JavaScript are crucial Technologies</h1>
+            <p>The web would not work without them...</p>
+        </div>
+        <div id="advantages">
+            <ul>
+                <li class="adv">Flexible</li>
+                <li class="adv">Available</li>
+                <li class="adv">Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        const mainHeading = document.querySelector("h1");
+        console.log(mainHeading.innerHTML);
+
+        const secondAdvantage = document.querySelectorAll('.adv');
+        const secondAdv = secondAdvantage[1];
+        console.log(secondAdv.innerHTML);
+
+        const advDiv = document.querySelector('#advantages');
+        console.log(advDiv.innerHTML);
+    </script>
+</body>
+</html>
